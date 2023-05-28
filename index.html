@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário personalizado</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="idTitulo">Formulário personalizado</h1>
+        <p id="idDescricao" class="descricao">Praticando HTML e CSS</p>
+    </header>
+    <main>
+        <form id="form-cad">
+            <div class="form-group">
+                <label id="nome-label" for="nome">Nome</label>
+                <input type="text" name="nome" id="idNome" class="form-control" placeholder="Insira seu nome" required>
+            </div>
+            <div class="form-group">
+                <label id="data-label" for="data">Data de nascimento<span class="obs">(opcional)</span></label>
+                <input type="date" name="data" id="idData" class="form-control">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">E-mail</label>
+                <input type="email" name="email"  id="idEmail" class="form-control" placeholder="Insira seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label id="senha-label" for="senha">Senha</label>
+                <input type="password" name="senha"  id="idSenha" class="form-control" placeholder="Insira sua senha" required>
+            </div>
+            <div class="form-group">
+                <p>Qual opção descreve melhor sua função atual?</p>
+                <select name="profissao" id="idProfissao" class="form-control" required>
+                    <option disabled selected value>Selecione sua função atual</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="estagiario">Estagiário</option>
+                    <option value="programador">Programador</option>
+                    <option value="prefiroN">Prefiro não dizer</option>
+                    <option value="outros">Outros</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <p>Qual o seu nível de inglês?</p>
+                <label><input type="radio" name="ingles" value="nenhum" class="input-radio" checked>Nenhum</label>
+                <label><input type="radio" name="ingles" value="basico" class="input-radio">Básico</label>
+                <label><input type="radio" name="ingles" value="interm" class="input-radio">Intermediário</label>
+                <label><input type="radio" name="ingles" value="avanca" class="input-radio">Avançado</label>
+            </div>
+            <div class="form-group">
+                <p>Qual sua área favorita da programação?</p>
+                <select name="fav-area" id="fav-area" class="form-control" required>
+                    <option disabled selected value>Selecione a área</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="front">Front-end</option>
+                    <option value="back">Back-end</option>
+                    <option value="full">Full-stack</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Quais linguagens você prefere?<span class="obs">(Marque tudo o que se aplica)</span></p>
+                <label><input type="checkbox" name="prefere" value="c" class="input-checkbox">C</label>
+                <label><input type="checkbox" name="prefere" value="cpp" class="input-checkbox">C++</label>
+                <label><input type="checkbox" name="prefere" value="csharp" class="input-checkbox">C#</label>
+                <label><input type="checkbox" name="prefere" value="java" class="input-checkbox">Java</label>
+                <label><input type="checkbox" name="prefere" value="java-script" class="input-checkbox">JavaScript</label>
+                <label><input type="checkbox" name="prefere" value="php" class="input-checkbox">PHP</label>
+                <label><input type="checkbox" name="prefere" value="python" class="input-checkbox">Python</label>
+                <label><input type="checkbox" name="prefere" value="type-script" class="input-checkbox">TypeScript</label>
+                <label><input type="checkbox" name="prefere" value="outras" class="input-checkbox">Outras</label>
+            </div>
+            <div class="form-group">
+                <p>Deixe sua opinião sobre o formulário</p>
+                <textarea name="comentarios" id="idComentarios" class="input-textarea" placeholder="Deixe seu comentário..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="idEnviar" class="enviar-button">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
